@@ -2,50 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>minimalist</title>
-    <meta name="description" content="Clean HTML portfolio template, responsive, open-source, and ready to use!">
-    <meta name="author" content="Giosuè Sulipano">
+    <title>Stefano Lambiase</title>
+    <meta name="description" content="Stefano Lambiase personal website">
+    <meta name="author" content="Stefano Lambiase">
 
     <!-- Mobile-friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Tooltips -->
+    <!-- Production version -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <!-- Minimalist CSS -->
-    <link rel="stylesheet" href="assets/css/minimalist.css">
+    <link href="assets/css/minimalist-light-theme.css" rel="stylesheet" id="theme-link">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/images/cat.jpg">
 
   </head>
   <body>
     <!-- User info -->
     <header>
       <div class="container">
-        <div class="row justify-content-lg-center">
-          <div class="col-lg-2 text-center">
-            <img src="https://placeimg.com/140/140/any" class="user-image rounded-circle" alt="Name Surname">
+        <div class="row justify-content-lg-center" style="align-items: center;">
+          
+          <div class="col-lg-3 text-center">
+            <img src="./assets/images/CVImage_2.jpg" class="user-image rounded-circle" alt="CV Image">
           </div>
+
           <div class="col-lg-7">
-            <h2>Name Surname</h2>
+             <!-- Switch for dark/light mode -->
+             <div class="form-check form-switch d-flex justify-content-end">
+              <input class="switch-mode form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+              <label class="form-check-label" for="flexSwitchCheckDefault">
+                Light Mode
+              </label>
+            </div>
+
+            <h2>Stefano Lambiase</h2>
             <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum accumsan urna ut iaculis. Nunc vitae elit eget eros eleifend venenatis. Suspendisse lacinia risus id mauris cursus facilisis. Etiam faucibus consectetur egestas. Quisque porta nibh quis suscipit scelerisque. Nullam ut hendrerit orci.
+              I was born in Salerno (Italy) on July 9th, 1996, and I enrolled in a Computer Science course at the University of Salerno in 2015. 
+              During these years, I improved my skills in Programming, Mathematics, Algorithms, and Software Engineering, and I obtained the (magna cum laude) <strong>Bachelor's Degree</strong> defending a thesis on <strong>Test Smell Detection and Suggestions</strong> proposed by Prof. Andrea De Lucia.
+              Also, I fell in love with Software Engineering, and I chose to begin a Master's Degree in Computer Science, curriculum <strong>Software Engineering and IT Management</strong>, at the University of Salerno in 2019.
+              As a result, I got the (magna cum laude) <strong>Master's Degree</strong> on September 30th, 2021, defending a thesis regarding the human and social aspects of Software Development and Software Project Management.
+              During the work, I was supervised by Prof. Filomena Ferrucci, Prof. Fabio Palomba, and Dr. Gemma Catolino.
             </p>
-            <ul class="list-inline text-lg-right social-icons">
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-dev"></i></a></li>
-              <!-- If you have another kind of blog (such as Hugo, ...) you can remove dev.to and use the next list-item 
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fas fa-pencil-alt"></i></a></li>
-              -->
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fas fa-at"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <div class="d-flex justify-content-end">
+            <ul class="list-inline social-icons">
+              <li class="list-inline-item"><a href="https://github.com/StefanoLambiase" target="_blank"><em class="fab fa-github"></em></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/stefano-lambiase/" target="_blank"><em class="fab fa-linkedin-in"></em></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/stefano.lambiase7/" target="_blank"><em class="fab fa-instagram"></em></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/StefanoLambiase" target="_blank"><em class="fab fa-twitter"></em></a></li>
+              <li class="list-inline-item"><a href="https://orcid.org/0000-0002-9933-6203" target="_blank"><em class="fab fa-orcid"></em></a></li>
             </ul>
+          </div>
           </div>
         </div>
       </div>
@@ -55,116 +71,200 @@
       <!-- ./content-switch -->
       <div class="d-flex justify-content-center">
         <div class="list-group list-group-horizontal-md" id="content-tabs" role="tablist">
-          <a class="list-group-item small text-uppercase active" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
+          <a class="list-group-item small text-uppercase" id="list-about-me" data-toggle="list" href="#about-me" role="tab">About me</a>
+          <a class="list-group-item small text-uppercase active" id="list-committee-list" data-toggle="list" href="#committee" role="tab">Committees</a>
+          <a class="list-group-item small text-uppercase" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
+          <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#publications" role="tab">Publications</a>
           <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
         </div>
       </div>
       <!-- ./content-switch -->
+
       <!-- ./content-body -->
       <div class="container pt-5 tab-content">
-        <!-- ./experience-panel-->
-        <div class="tab-pane fade show active" id="experience" role="tabpanel">
+
+        <!-- ./about-me-panel -->
+        <div class="tab-pane fade show" id="about-me" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg">
+              <div>
+                <!-- Personal-info -->
+                <h3 class="text-inside-line text-center"><span>Personal info</span></h3>
+                <div style="margin-top: 40px">
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-end"><span>Name</span></div>	
+                    <div class="col text-start"><span class="text-muted">Stefano Lambiase</span></div>	
+                  </div>
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-end"><span>Birthday</span></div>	
+                    <div class="col text-start"><span class="text-muted">09/07/1996</span></div>	
+                  </div>
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-end"><span>Place of birth</span></div>	
+                    <div class="col text-start"><span class="text-muted">Salerno (SA)</span></div>	
+                  </div>
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-end"><span>Nationality</span></div>	
+                    <div class="col text-start"><span class="text-muted">Italian</span></div>	
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 70px;">
+                <!-- contact-info -->
+                <h3 class="text-inside-line text-center"><span>Contact info</span></h3>
+                <div style="margin-top: 40px">
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-end"><span>E-mail</span></div>	
+                    <div class="col text-start"><span class="text-muted">stefanolambiase7@gmail.com</span></div>	
+                  </div>
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-end"><span>Institutional E-mail</span></div>	
+                    <div class="col text-start"><span class="text-muted">slambiase@unisa.it</span></div>	
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 70px;">
+                <!-- Research Interests -->
+                <h3 class="text-inside-line text-center"><span>Research Interests</span></h3>
+                <div style="margin-top: 40px">
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-center"><span class="text-muted">Social and Human Aspects of Software Engineering</span></div>	
+                  </div>
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-center"><span class="text-muted">Software Project Management</span></div>	
+                  </div>
+                  <br>
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-center"><span class="text-muted">Software Bot</span></div>	
+                  </div>
+                  <br>
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-center"><span class="text-muted">Software Maintenance and Evolution</span></div>	
+                  </div>
+                  <br>
+                  <div class="row justify-content-lg-center">
+                    <div class="col text-end"><span>Résumé</span></div>	
+                    <div class="col text-start"><span class="text-muted"><a class="text-muted" href="/assets/downloads/Stefano_Lambiase_CV.pdf" download>download</a></span></div>	
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 70px; margin-bottom: 100px;">
+                <!-- Hobbies-info -->
+                <h3 class="text-inside-line text-center"><span>Hobbies & Interests</span></h3>
+                <div style="margin-top: 40px">
+                  <div class="row justify-content-lg-center">
+                    <ul class="list-inline h5 text-center" style="font-size: 170%">
+                      <li class="list-inline-item px-2" data-toggle="tooltip" data-placement="bottom" title="Music">🎶</li>
+                      <li class="list-inline-item px-2" data-toggle="tooltip" data-placement="bottom" title="Games">🎮</li>
+                      <li class="list-inline-item px-2" data-toggle="tooltip" data-placement="bottom" title="Computers">💻</li>
+                      <li class="list-inline-item px-2" data-toggle="tooltip" data-placement="bottom" title="Read Books">📖</li>
+                      <li class="list-inline-item px-2" data-toggle="tooltip" data-placement="bottom" title="Walk and exercise">🚶‍♂️</li>
+                      <li class="list-inline-item px-2" data-toggle="tooltip" data-placement="bottom" title="Cats">😼</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ./committee-panel-->
+        <div class="tab-pane fade show active" id="committee" role="tabpanel">
           <div class="row justify-content-lg-center">
             <div class="col-lg">
               <!-- Timeline -->
-              <div class="timeline-container">
-                <div class="timeline-block timeline-block-right">
-                  <div class="marker"></div>
-                  <div class="timeline-content">
-                    <h3 class="timeline-h3">First Year</h3>
-                    <span class="timeline-span">Some work experience</span>
-                    <p class="text-muted small mb-3">Experience Date</p>
-                    <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-                  </div>
-                </div>
-            
-                <div class="timeline-block timeline-block-left">
-                  <div class="timeline-content">
-                    <h3 class="timeline-h3">Second Year</h3>
-                    <span class="timeline-span">Some work experience</span>
-                    <p class="text-muted small mb-3">Experience Date</p>
-                    <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-                  </div>
-                  <div class="marker"></div>
-                </div>
-            
-                <div class="timeline-block timeline-block-right">
-                  <div class="marker"></div>
-                  <div class="timeline-content">
-                    <h3 class="timeline-h3">Third Year</h3>
-                    <span class="timeline-span">Some work experience</span>
-                    <p class="text-muted small mb-3">Experience Date</p>
-                    <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-                  </div>
-                </div>
-            
-                <div class="timeline-block timeline-block-left">
-                  <div class="timeline-content">
-                    <h3 class="timeline-h3">Fourth Year</h3>
-                    <span class="timeline-span">Some work experience</span>
-                    <p class="text-muted small mb-3">Experience Date</p>
-                    <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-                  </div>
-                  <div class="marker"></div>
-                </div>
-            
-                <div class="timeline-block timeline-block-right">
-                  <div class="marker"></div>
-                  <div class="timeline-content">
-                    <h3 class="timeline-h3">Fifth Year</h3>
-                    <span class="timeline-span">Some work experience</span>
-                    <p class="text-muted small mb-3">Experience Date</p>
-                    <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-                  </div>
-                </div>
+              <div id="committee-container" class="timeline-container">
+
+                <!-- The panel is populated using a JSON -->
+
               </div>
               <!-- ./timeline -->
             </div>
           </div>
         </div>
+        <!-- ./committee-panel-->
+
+        <!-- ./experience-panel-->
+        <div class="tab-pane fade show" id="experience" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg">
+              <!-- Timeline -->
+              <div id="experience-container" class="timeline-container">
+
+                <!-- The panel is populated using a JSON -->
+
+              </div>
+              <!-- ./timeline -->
+            </div>
+          </div>
+        </div>
+        <!-- ./experience-panel-->
+
+        <!-- ./publications-panel-->
+        <div class="tab-pane fade show" id="publications" role="tabpanel">
+          <div class="row justify-content-lg-center" id="publications_inner">
+
+              <!-- The panel is populated using a JSON -->
+
+          </div>
+        </div>
+        <!-- ./publications-panel-->
+
         <!-- ./projects-panel-->
         <div class="tab-pane fade show" id="projects" role="tabpanel">
           <!-- TODO: Projects cards? Dunno. -->
+          <!-- Force next columns to break to new line -->
           <div class="row justify-content-lg-center">
-            <!-- ./project-1 -->
+            
+            <!-- ./project - CLOUD COMPUTING -->
             <div class="col-lg-8 pb-3">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Project Title</h4>
-                  <p class="card-text">Project description, bla, bla, bla..</p>
+                  <h4 class="card-title">Erwin Bot</h4>
+                  <p class="card-text">
+                    🤖 Chat bot for management support built with Azure Cloud Services. Produced for the Cloud Computing course of Computer Science at University of Salerno.
+                    It offers the manager the opportunity to communicate in an organized manner with the project team and, at the same time, monitor and organize the various activities under development.
+                  </p>
                   <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="#"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/StefanoLambiase/ErwinBot" target="_blank"><em class="fab fa-github"></em></a></li>
                   </ul>
                 </div>
               </div>
             </div>
             <!-- Force next columns to break to new line -->
             <div class="w-100"></div>
+
+            <!-- ./project - GPS -->
+            <div class="col-lg-8 pb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">BiblioNet</h4>
+                  <p class="card-text">
+                    📕 🎓 Spring Boot Web App for library support. Produced for the Software Engineering and Software Project Management courses of Computer Science at University of Salerno.
+                  </p>
+                  <ul class="list-inline social-icons">
+                    <li class="list-inline-item"><a href="https://github.com/StefanoLambiase/biblionet" target="_blank"><em class="fab fa-github"></em></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+
             <!-- ./project-2 -->
             <div class="col-lg-8 pb-3">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Project Title</h4>
-                  <p class="card-text">Project description, bla, bla, bla..</p>
+                  <h4 class="card-title">DARTS</h4>
+                  <p class="card-text">
+                    <strong>DARTS (Detection And Refactoring of Test Smells)</strong> is an Intellij plug-in which (1) implements a state-of-the-art detection mechanism to detect instances of three test smell types, i.e., General Fixture, Eager Test, and Lack of Cohesion of Test Methods, at commit-level and (2) enables their automated refactoring through the integrated APIs provided by Intellij.
+                  </p>
                   <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="#"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Force next columns to break to new line -->
-            <div class="w-100"></div>
-            <!-- ./project-3 -->
-            <div class="col-lg-8 pb-3">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Project Title</h4>
-                  <p class="card-text">Project description, bla, bla, bla..</p>
-                  <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="#"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/StefanoLambiase/DARTS" target="_blank"><em class="fab fa-github"></em></a></li>
                   </ul>
                 </div>
               </div>
@@ -178,14 +278,28 @@
     <footer>
       <div class="container text-center">
         <p class="small">
-          <a href="https://github.com/imgios/minimalist" target="_blank">minimalist</a> built with 🖤 and <a href="https://getbootstrap.com/" target="_blank">bootstrap</a>
+          This site is built with <a href="https://github.com/imgios/minimalist" target="_blank">minimalist</a>, a template built with 🖤 and <a href="https://getbootstrap.com/" target="_blank">bootstrap</a> by <a href="https://github.com/imgios">imgios</a>
         </p>
       </div>
     </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- javaScript for dark mode -->
+    <script src="js/switchMode.js"></script>
+    <!-- JavaScript for experience filling -->
+    <script src="js/experienceFilling.js"></script>
+    <script src="js/committeeFilling.js"></script>
+    <script src="js/paperFilling.js"></script>
+    <!-- javascript for tooltips -->
+    <script>
+      // Select all elements with data-toggle="tooltips" in the document
+      $('[data-toggle="tooltip"]').tooltip();
+    </script>
   </body>
 </html>

@@ -16,10 +16,10 @@
 ## Contributing
 If you want to make it with different colors, add new features, fix any bug, or just contributing, **you're welcome**!
 1. Start by forking the repository.
-2. Create your own branch from `develop`: 
+2. Create your own branch: 
     - `feature/featureName`
     - `bug/bugName`
-3. Do the magic and write good commits message!
+3. Do the magic and write good commit messages!
 4. Create a Pull Request.
 
 ## License
